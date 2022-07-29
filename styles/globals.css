@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* define class names to add global styles */
+@layer components {
+  .link {
+    @apply hover:underline cursor-pointer;
+  }
+}
