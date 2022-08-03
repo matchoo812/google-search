@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
 import { SearchIcon, MicrophoneIcon } from "@heroicons/react/solid";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -29,13 +30,16 @@ export default function Home() {
           <input type='text' className='flex-grow focus:outline-none' />
           <MicrophoneIcon className='h-5' />
         </div>
-        <div className='flex flex-col sm:flex-row w-[50%] space-y-2 mt-8 sm:space-y-0 justify-center'>
+        {/* buttons div */}
+        <div className='flex flex-col sm:flex-row w-[50%] space-y-2 mt-8 sm:space-y-0 justify-center sm:space-x-2'>
           <button className='btn'>Google Search</button>
-          <button className='btn'>I'm Feeling Lucky</button>
+          <button className='btn'>I&apos;m Feeling Lucky</button>
         </div>
       </form>
 
       {/* Footer */}
+
+      <Footer />
     </div>
   );
 }
