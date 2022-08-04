@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
 import { getProviders, signIn } from "next-auth/react";
+import Image from "next/image";
 
 export async function getServerSideProps() {
   const providers = await getProviders();
@@ -16,11 +17,16 @@ export default function logIn({ providers }) {
       <div className='mt-40'>
         {Object.values(providers).map(provider => (
           <div key={provider.name} className='flex flex-col items-center'>
-            <img
+            <Image
               className='w-52 object-cover'
               src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png'
               alt=''
             />
+            {/* <img
+              className='w-52 object-cover'
+              src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png'
+              alt=''
+            /> */}
             <p className='text-sm italic my-10 text-center'>
               This website is for educational purposes only
             </p>

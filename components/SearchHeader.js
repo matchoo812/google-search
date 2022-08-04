@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/solid";
 import User from "./User";
+import SearchHeaderOptions from "./SearchHeaderOptions";
 
 export default function SearchHeader() {
   const router = useRouter();
@@ -12,7 +13,7 @@ export default function SearchHeader() {
     e.preventDefault();
     const term = searchRef.current.value.trim();
     if (!term) return;
-    router.push(`/search?term=${term}`);
+    router.push(`/search?term=${term}&searchType=`);
   };
 
   return (
@@ -39,12 +40,16 @@ export default function SearchHeader() {
             onClick={() => (searchRef.current.value = "")}
           />
           <MicrophoneIcon className='h-6 hidden sm:inline-flex text-blue-500 pl-4 border-l-2 border-gray-300 mr-3' />
-          <SearchIcon className='h-6 hidden sm:inline-flex text-blue-500' />
+          <SearchIcon
+            className='h-6 hidden sm:inline-flex text-blue-500'
+            onClick={search}
+          />
           <button type='submit' onClick={search} hidden></button>
         </form>
 
         <User className='ml-auto whitespace-nowrap' />
       </div>
+      <SearchHeaderOptions />
     </header>
   );
 }
