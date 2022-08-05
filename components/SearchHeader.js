@@ -23,8 +23,8 @@ export default function SearchHeader() {
           onClick={() => router.push("/")}
           src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png'
           objectFit='contain'
-          width='120'
-          height='40'
+          width={120}
+          height={40}
           alt='Google Logo'
           className='cursor-pointer'
         />

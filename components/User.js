@@ -7,18 +7,20 @@ export default function User({ className }) {
   if (session) {
     return (
       <>
-        {/* <img
-          onClick={signOut}
-          src={session.user.image}
-          alt=''
-          className={`h-10 w-10 rounded-full hover:bg-gray-200 cursor-pointer p-1 ${className}`}
-        /> */}
-        <Image
+        <img
           onClick={signOut}
           src={session.user.image}
           alt=''
           className={`h-10 w-10 rounded-full hover:bg-gray-200 cursor-pointer p-1 ${className}`}
         />
+        {/* <Image
+          onClick={signOut}
+          src={session.user.image}
+          alt=''
+          width={40}
+          height={40}
+          className={`rounded-full hover:bg-gray-200 cursor-pointer p-2 ${className}`}
+        /> */}
       </>
     );
   }
