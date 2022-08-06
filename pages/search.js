@@ -1,5 +1,7 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import SearchHeader from "../components/SearchHeader";
+import SearchResults from "../components/SearchResults";
 import { mockResponse } from "../Response";
 
 export async function getServerSideProps(context) {
@@ -21,18 +23,21 @@ export async function getServerSideProps(context) {
   };
 }
 
-export default function search({ results }) {
-  console.log(results);
+export default function Search({ results }) {
+  // console.log(results);
+  const router = useRouter();
+
   return (
     <>
       <Head>
-        <title>Search Page</title>
+        <title>{router.query.term} - Search page</title>
       </Head>
 
       {/* Search Header */}
       <SearchHeader />
 
       {/* Search Results */}
+      <SearchResults results={results} />
     </>
   );
 }
