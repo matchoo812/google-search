@@ -1,8 +1,9 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import ImageResults from "../components/ImageResults";
 import SearchHeader from "../components/SearchHeader";
 import SearchResults from "../components/SearchResults";
-import { mockResponse } from "../Response";
+import { mockImageResponse } from "../Response";
 
 export async function getServerSideProps(context) {
   const { term } = context.query;
@@ -10,7 +11,7 @@ export async function getServerSideProps(context) {
 
   const mockData = false;
   const data = mockData
-    ? mockResponse
+    ? mockImageResponse
     : await fetch(
         `https://www.googleapis.com/customsearch/v1?key=${
           process.env.GOOGLE_SEARCH_API_KEY
@@ -27,7 +28,7 @@ export async function getServerSideProps(context) {
 export default function Search({ results }) {
   // console.log(results);
   const router = useRouter();
-  const { term } = router.query;
+  const { term, searchType } = router.query;
 
   return (
     <>
@@ -39,7 +40,11 @@ export default function Search({ results }) {
       <SearchHeader />
 
       {/* Search Results */}
-      <SearchResults results={results} />
+      {searchType === "image" ? (
+        <ImageResults results={results} />
+      ) : (
+        <SearchResults results={results} />
+      )}
     </>
   );
 }

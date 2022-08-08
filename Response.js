@@ -519,3 +519,294 @@ export const mockResponse = {
     },
   ],
 };
+
+export const mockImageResponse = {
+  kind: "customsearch#search",
+  url: {
+    type: "application/json",
+    template:
+      "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json",
+  },
+  queries: {
+    request: [
+      {
+        title: "Google Custom Search - wordpress with react",
+        totalResults: "679000000",
+        searchTerms: "wordpress with react",
+        count: 10,
+        startIndex: 1,
+        inputEncoding: "utf8",
+        outputEncoding: "utf8",
+        safe: "off",
+        cx: "e16da4243ee7d4926",
+        searchType: "image",
+      },
+    ],
+    nextPage: [
+      {
+        title: "Google Custom Search - wordpress with react",
+        totalResults: "679000000",
+        searchTerms: "wordpress with react",
+        count: 10,
+        startIndex: 11,
+        inputEncoding: "utf8",
+        outputEncoding: "utf8",
+        safe: "off",
+        cx: "e16da4243ee7d4926",
+        searchType: "image",
+      },
+    ],
+  },
+  context: {
+    title: "go-v1",
+  },
+  searchInformation: {
+    searchTime: 0.334401,
+    formattedSearchTime: "0.33",
+    totalResults: "679000000",
+    formattedTotalResults: "679,000,000",
+  },
+  items: [
+    {
+      kind: "customsearch#result",
+      title: "How to Use WordPress with React [WP REST API Tutorial]",
+      htmlTitle:
+        "How to Use <b>WordPress</b> with <b>React</b> [WP REST API Tutorial]",
+      link: "https://www.datocms-assets.com/48401/1628645604-wordpress-react.png",
+      displayLink: "snipcart.com",
+      snippet: "How to Use WordPress with React [WP REST API Tutorial]",
+      htmlSnippet:
+        "How to Use <b>WordPress</b> with <b>React</b> [WP REST API Tutorial]",
+      mime: "image/png",
+      fileFormat: "image/png",
+      image: {
+        contextLink: "https://snipcart.com/blog/reactjs-wordpress-rest-api-example",
+        height: 300,
+        width: 712,
+        byteSize: 29787,
+        thumbnailLink:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUtFQoZWefEAjOLCBsNazTSjawNh--KW91p1LsvTYL05z7WfNLnnsnR20&s",
+        thumbnailHeight: 59,
+        thumbnailWidth: 140,
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "How to Create a Modern Web App Using WordPress and React",
+      htmlTitle:
+        "How to Create a Modern Web App Using <b>WordPress</b> and <b>React</b>",
+      link: "https://cdn-media-1.freecodecamp.org/images/1*sKZ0nC0gyc5tiqlVBfu_uQ.png",
+      displayLink: "www.freecodecamp.org",
+      snippet: "How to Create a Modern Web App Using WordPress and React",
+      htmlSnippet:
+        "How to Create a Modern Web App Using <b>WordPress</b> and <b>React</b>",
+      mime: "image/png",
+      fileFormat: "image/png",
+      image: {
+        contextLink:
+          "https://www.freecodecamp.org/news/wordpress-react-how-to-create-a-modern-web-app-using-wordpress-ef6cc6be0cd0/",
+        height: 450,
+        width: 800,
+        byteSize: 161282,
+        thumbnailLink:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxsYRa7_vvfo40AMyHhTsyeCjk55vKbNEEPTeTNmLKoBfYPU8BHlmIsxQ&s",
+        thumbnailHeight: 80,
+        thumbnailWidth: 143,
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "How to Enqueue React in A WordPress Theme or Plugin - JavaScript ...",
+      htmlTitle:
+        "How to Enqueue <b>React</b> in A <b>WordPress</b> Theme or Plugin - JavaScript ...",
+      link: "https://javascriptforwp.com/wp-content/uploads/2018/11/React.png",
+      displayLink: "javascriptforwp.com",
+      snippet:
+        "How to Enqueue React in A WordPress Theme or Plugin - JavaScript ...",
+      htmlSnippet:
+        "How to Enqueue <b>React</b> in A <b>WordPress</b> Theme or Plugin - JavaScript ...",
+      mime: "image/png",
+      fileFormat: "image/png",
+      image: {
+        contextLink: "https://javascriptforwp.com/enqueue-react-in-wordpress/",
+        height: 720,
+        width: 1280,
+        byteSize: 63507,
+        thumbnailLink:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdYJBbiahEhv2PyMKFlrDrBx2jkmGy2D9qbIvNWgBLy1LmVrM9XWMIQ&s",
+        thumbnailHeight: 84,
+        thumbnailWidth: 150,
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "How to Create an Advance Web App using WordPress and React",
+      htmlTitle:
+        "How to Create an Advance Web App using <b>WordPress</b> and <b>React</b>",
+      link: "https://www.iihglobal.com/wp-content/uploads/2019/11/web-app-usign-react-and-wordpress-2.jpeg",
+      displayLink: "www.iihglobal.com",
+      snippet: "How to Create an Advance Web App using WordPress and React",
+      htmlSnippet:
+        "How to Create an Advance Web App using <b>WordPress</b> and <b>React</b>",
+      mime: "image/jpeg",
+      fileFormat: "image/jpeg",
+      image: {
+        contextLink:
+          "https://www.iihglobal.com/blog/how-to-create-a-advance-web-app-using-wordpress-and-react/",
+        height: 613,
+        width: 1280,
+        byteSize: 24920,
+        thumbnailLink:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwy1Ez-X5fhHOT9qvxpszFW3u7U5dQH0zdKmv0v0yZmphVQCLAtmRtoI&s",
+        thumbnailHeight: 72,
+        thumbnailWidth: 150,
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "WordPress with React - Implementing Headless WordPress with ReactJs",
+      htmlTitle:
+        "<b>WordPress</b> with <b>React</b> - Implementing Headless <b>WordPress</b> with <b>ReactJs</b>",
+      link: "https://www.brihaspatitech.com/blog/wp-content/uploads/2019/07/blog.jpg",
+      displayLink: "www.brihaspatitech.com",
+      snippet: "WordPress with React - Implementing Headless WordPress with ReactJs",
+      htmlSnippet:
+        "<b>WordPress</b> with <b>React</b> - Implementing Headless <b>WordPress</b> with <b>ReactJs</b>",
+      mime: "image/jpeg",
+      fileFormat: "image/jpeg",
+      image: {
+        contextLink:
+          "https://www.brihaspatitech.com/blog/headless-wordpress-reactjs/",
+        height: 400,
+        width: 1180,
+        byteSize: 168385,
+        thumbnailLink:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdIMrvSq1xuymL16mTsAQAzGazKY7B6En4vJltlYs5oRo9UtfRAKmczC0&s",
+        thumbnailHeight: 51,
+        thumbnailWidth: 150,
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "Adding React to a WordPress Theme Tutorial - JavaScript for WordPress",
+      htmlTitle:
+        "Adding <b>React</b> to a <b>WordPress</b> Theme Tutorial - JavaScript for <b>WordPress</b>",
+      link: "https://javascriptforwp.com/wp-content/uploads/2019/12/React-in-WordPress-Series-1.png",
+      displayLink: "javascriptforwp.com",
+      snippet:
+        "Adding React to a WordPress Theme Tutorial - JavaScript for WordPress",
+      htmlSnippet:
+        "Adding <b>React</b> to a <b>WordPress</b> Theme Tutorial - JavaScript for <b>WordPress</b>",
+      mime: "image/png",
+      fileFormat: "image/png",
+      image: {
+        contextLink:
+          "https://javascriptforwp.com/adding-react-to-a-wordpress-theme-tutorial/",
+        height: 512,
+        width: 1024,
+        byteSize: 80010,
+        thumbnailLink:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQOcuxBB70h5Hsjzc5aiurb6xyvQkTa7KWKg3DuQy1QvcBaVpPOUupNME&s",
+        thumbnailHeight: 75,
+        thumbnailWidth: 150,
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "How to ReactJs Collaborates with WordPress | ikodes Technology",
+      htmlTitle:
+        "How to <b>ReactJs</b> Collaborates with <b>WordPress</b> | ikodes Technology",
+      link: "https://ikodes.net/wp-content/uploads/2019/10/ikodes-WordPress-ReactJS-Profit-Loss.jpg",
+      displayLink: "ikodes.net",
+      snippet: "How to ReactJs Collaborates with WordPress | ikodes Technology",
+      htmlSnippet:
+        "How to <b>ReactJs</b> Collaborates with <b>WordPress</b> | ikodes Technology",
+      mime: "image/jpeg",
+      fileFormat: "image/jpeg",
+      image: {
+        contextLink:
+          "https://ikodes.net/how-to-reactjs-collaborates-with-wordpress/",
+        height: 720,
+        width: 1280,
+        byteSize: 154877,
+        thumbnailLink:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzaN61KV5q-2bBISmoW8PBDCqx5KSKYSrYoKCtMZ1biyxr76z5u3I8LpI&s",
+        thumbnailHeight: 84,
+        thumbnailWidth: 150,
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "How To Build A Skin For Your Web App With React And WordPress ...",
+      htmlTitle:
+        "How To Build A Skin For Your Web App With <b>React</b> And <b>WordPress</b> ...",
+      link: "https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/30b9dab3-8e73-4858-b878-d42d0db66dcf/react-wp-app14.png",
+      displayLink: "www.smashingmagazine.com",
+      snippet: "How To Build A Skin For Your Web App With React And WordPress ...",
+      htmlSnippet:
+        "How To Build A Skin For Your Web App With <b>React</b> And <b>WordPress</b> ...",
+      mime: "image/png",
+      fileFormat: "image/png",
+      image: {
+        contextLink:
+          "https://www.smashingmagazine.com/2018/03/react-wordpress-web-app/",
+        height: 1080,
+        width: 1920,
+        byteSize: 238114,
+        thumbnailLink:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW4EFdRlt5-FtUWa7aJbPFf6Ju6_TVDOVuJz1eeKDIcyVcGbJNqDWkX_4&s",
+        thumbnailHeight: 84,
+        thumbnailWidth: 150,
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "Create a Wordpress Website using React 🔥 | Wordpress RESTFUL API ...",
+      htmlTitle:
+        "Create a <b>Wordpress</b> Website using <b>React</b> 🔥 | <b>Wordpress</b> RESTFUL API ...",
+      link: "https://i.ytimg.com/vi/jqHGD31lgGs/maxresdefault.jpg",
+      displayLink: "www.youtube.com",
+      snippet:
+        "Create a Wordpress Website using React 🔥 | Wordpress RESTFUL API ...",
+      htmlSnippet:
+        "Create a <b>Wordpress</b> Website using <b>React</b> 🔥 | <b>Wordpress</b> RESTFUL API ...",
+      mime: "image/jpeg",
+      fileFormat: "image/jpeg",
+      image: {
+        contextLink: "https://www.youtube.com/watch?v=jqHGD31lgGs",
+        height: 720,
+        width: 1280,
+        byteSize: 137501,
+        thumbnailLink:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCuIR4O5TZ_MvIGIOUnC0CRBF1AEmFbhL0GPfHt5yFDe6ATbN-ctpIYg&s",
+        thumbnailHeight: 84,
+        thumbnailWidth: 150,
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "React - Responsive Multi-Purpose WordPress Framework by ThemeCatcher",
+      htmlTitle:
+        "<b>React</b> - Responsive Multi-Purpose <b>WordPress</b> Framework by ThemeCatcher",
+      link: "https://s3.envato.com/files/253574946/01_sales-image-featured-react-wordpress-theme.png",
+      displayLink: "themeforest.net",
+      snippet:
+        "React - Responsive Multi-Purpose WordPress Framework by ThemeCatcher",
+      htmlSnippet:
+        "<b>React</b> - Responsive Multi-Purpose <b>WordPress</b> Framework by ThemeCatcher",
+      mime: "image/png",
+      fileFormat: "image/png",
+      image: {
+        contextLink:
+          "https://themeforest.net/item/react-responsive-wordpress-theme-creator/10788794",
+        height: 300,
+        width: 590,
+        byteSize: 127579,
+        thumbnailLink:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ61nUChDU87t-Ri2TWUDHuOQGnolR_dFpXApyaqm3JhgoX6jpGXsiAXD0&s",
+        thumbnailHeight: 69,
+        thumbnailWidth: 135,
+      },
+    },
+  ],
+};
