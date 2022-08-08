@@ -6,8 +6,9 @@ import { mockResponse } from "../Response";
 
 export async function getServerSideProps(context) {
   const { term } = context.query;
+  const startIndex = context.query.start || "1";
 
-  const mockData = true;
+  const mockData = false;
   const data = mockData
     ? mockResponse
     : await fetch(
@@ -15,8 +16,8 @@ export async function getServerSideProps(context) {
           process.env.GOOGLE_SEARCH_API_KEY
         }&cx=${process.env.CONTEXT_KEY}&q=${term}${
           context.query.searchType && "&searchType=image"
-        }`
-      ).json();
+        }&start=${startIndex}`
+      ).then(res => res.json());
 
   return {
     props: { results: data },
@@ -26,11 +27,12 @@ export async function getServerSideProps(context) {
 export default function Search({ results }) {
   // console.log(results);
   const router = useRouter();
+  const { term } = router.query;
 
   return (
     <>
       <Head>
-        <title>{router.query.term} - Search page</title>
+        <title>{term} - Search page</title>
       </Head>
 
       {/* Search Header */}
