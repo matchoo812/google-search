@@ -8,7 +8,7 @@ export default function SearchResults({ results }) {
       <p className='text-gray-600 text-sm mb-5 mt-3'>
         About {formattedTotalResults} results ({formattedSearchTime} seconds)
       </p>
-      {results.items.map(item => (
+      {results.items?.map(item => (
         <div key={item.link} className='max-w-xl mb-8'>
           <div className='group'>
             <a href={item.link} className='text-sm truncate'>

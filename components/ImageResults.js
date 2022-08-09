@@ -16,6 +16,7 @@ export default function ImageResults({ results }) {
                   className='group-hover:shadow-xl w-full h-60 object-contain'
                 />
               </a>
+
               <a href={item.image.contextLink} className='group-hover:underline'>
                 <h2 className='truncate text-xl pt-2'>{item.title}</h2>
               </a>
